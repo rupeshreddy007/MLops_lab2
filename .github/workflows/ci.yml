@@ -34,10 +34,10 @@ jobs:
         run: |
           echo "## Experiment Results" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Name:** Your Name" >> $GITHUB_STEP_SUMMARY
-          echo "**Roll Number:** Your Roll Number" >> $GITHUB_STEP_SUMMARY
+          echo "**Name:** [Your Name]" >> $GITHUB_STEP_SUMMARY
+          echo "**Roll Number:** [Your Roll Number]" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### Metrics (from results.json)" >> $GITHUB_STEP_SUMMARY
+          echo "### Metrics" >> $GITHUB_STEP_SUMMARY
           echo "\`\`\`json" >> $GITHUB_STEP_SUMMARY
           cat output/results.json >> $GITHUB_STEP_SUMMARY
           echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
