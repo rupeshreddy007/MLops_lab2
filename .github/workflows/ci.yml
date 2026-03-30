@@ -25,11 +25,6 @@ jobs:
       - name: Run Training Script
         run: python train.py
 
-      - name: Read Results
-        id: results
-        run: |
-          echo "RESULT=$(cat output/results.json)" >> $GITHUB_ENV
-
       - name: Write Job Summary
         run: |
           echo "## Experiment Results" >> $GITHUB_STEP_SUMMARY
